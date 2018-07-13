@@ -1,0 +1,39 @@
+@import '../../styles/base/settings';
+@import '../../styles/base/base';
+.app-page {
+  .content-container {
+    min-height: unset;
+  }
+}
+
+.app {
+  background: #d0d0d0;
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+  margin: $m-size auto;
+}
+
+.app-content {
+  @extend %container-content-middle;
+  flex-direction: row;
+  flex-wrap: wrap;
+  p {
+    color: $primary;
+    text-align: center;
+    margin-top: $s-size;
+  }
+  >div {
+    width: 50%;
+  }
+}
+
+.app-container {}
+
+@media (min-width: 720px) {
+  .app-content {
+    >div {
+      width: 25%;
+    }
+  }
+}

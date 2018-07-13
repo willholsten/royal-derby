@@ -1,0 +1,55 @@
+@import '../../styles/base/settings';
+@import '../../styles/base/base';
+.services-page {
+  background: $page-background;
+  @extend %page-wrapper;
+  svg {
+    display: inline-block;
+    width: 45px;
+    fill: $primary;
+    vertical-align: middle;
+    margin: 5px;
+  }
+  h3 {
+    color: $primary;
+    display: inline-block;
+    margin: 5px;
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+  p {
+    color: rgba($primary, .75);
+    margin-bottom: 0;
+  }
+}
+
+.services-header {
+  background: $services !important;
+}
+
+.services-element-header {
+  margin-bottom: $l-size;
+}
+
+.services-content {
+  @extend %container-content-middle;
+  flex-wrap: wrap;
+  text-align: left;
+  >div {
+    padding: $xl-size $m-size;
+    margin: $s-size 0;
+    background: $background-container;
+  }
+}
+
+@media (min-width: 720px) {
+  .services-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .services-content>div {
+    padding: $xl-size $l-size;
+    margin: $s-size;
+    width: calc(50% - (2*1.2rem));
+  }
+}

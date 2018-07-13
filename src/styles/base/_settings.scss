@@ -1,0 +1,54 @@
+// Colours
+$primary: #212B43;
+$secondary: #347FC4;
+$page-background: #f7f7f7;
+$background-container: #f1f1f1;
+$about: #66afad;
+$services: #3452a3;
+$work: #2FB3DA;
+$contact:#2fda8f;
+// Spacing
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$xxl-size: 10rem;
+$xxxl-size: 13rem;
+// Media Queries
+$tablet: 720px;
+$desktop: 1200px;
+// Mixins
+%page-wrapper {
+  position: relative;
+  padding: $xl-size $s-size;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  min-height: 100vh;
+  z-index: 10;
+}
+
+%content-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: calc(100vh - 314px);
+}
+
+%container-content-middle {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 720px) {
+  %page-wrapper {
+    min-height: unset;
+  }
+  %container-content-middle {
+    flex-direction: row;
+    margin: auto;
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../styles/base/settings';
+@import '../../styles/base/base';
+footer {
+  display: block;
+  background: $primary;
+  max-width: 100%;
+  padding: $xl-size 0;
+  z-index: 999;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: $xl-size $s-size;
+  p,
+  a {
+    display: block;
+    color: rgba(255, 255, 255, .7);
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 100;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 1200px;
+  max-width: 100%;
+  align-content: center;
+  margin: 0 auto;
+  margin-top: $l-size;
+  padding: $m-size $s-size;
+  p {
+    color: rgba(255, 255, 255, .3);
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 100;
+  }
+}
+
+@media (min-width: 720px) {
+  .footer-content {
+    flex-direction: row;
+  }
+}

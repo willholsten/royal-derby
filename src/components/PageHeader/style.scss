@@ -1,0 +1,49 @@
+@import '../../styles/base/settings';
+@import '../../styles/base/base';
+.page-header {
+  background: $secondary;
+  position: relative;
+  width: 100%;
+  position: fixed;
+  height: 40vh;
+  min-height: 300px;
+  text-align: center;
+  z-index: 0;
+  padding: $xxl-size $s-size $xl-size;
+  p {
+    font: 400 1.6rem/2.75rem 'Roboto', helvetica, sans-serif;
+    color: white;
+    margin: 0 auto;
+    margin-top: $m-size;
+    width: 600px;
+    max-width: 100%;
+  }
+}
+
+.page-header-spacer {
+  display: block;
+  content: "";
+  height: 40vh;
+  min-height: 300px;
+  width: 100%;
+}
+
+.page-header:after {
+  content: "";
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  width: 100%;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    padding: $xxxl-size $s-size 0;
+  }
+}

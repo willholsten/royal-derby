@@ -1,0 +1,82 @@
+@import '../../styles/base/settings';
+@import '../../styles/base/base';
+header {
+  position: relative;
+}
+
+.header-content {
+  position: absolute;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo-mobile {
+  margin-top: 10px;
+  fill: white;
+  width: 50px;
+  z-index: 1;
+}
+
+.navigation-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  header {
+    position: fixed;
+    height: 100vh;
+    width: 230px;
+    background: #212121;
+    z-index: 999;
+  }
+  .header-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: scroll;
+  }
+  .navigation-desktop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    a {
+      opacity: 0.6;
+      font-size: 1.4rem;
+      color: white;
+      text-align: right;
+      padding: 15px 30px 15px 0;
+      border-top: 1px solid #272727;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.2s ease-in-out;
+    }
+    a:hover {
+      opacity: 1;
+      background: rgba(255, 255, 255, .05);
+      .sidebar-arrow {
+        opacity: 1;
+        transform: translate(0.5em, 0);
+      }
+    }
+  }
+  .sidebar-arrow {
+    opacity: 0.6;
+    margin-left: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  .logo-mobile {
+    display: none;
+  }
+  .logo-desktop {
+    margin-top: 10px;
+    fill: white;
+    width: 130px;
+    z-index: 1;
+    margin: $xl-size auto;
+  }
+}
