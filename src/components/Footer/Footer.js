@@ -32,7 +32,7 @@ const Footer = props => (
     </div>
     <div className="copyright">
       <p>Royal Derby Hotel. All Rights Reserved.</p>
-      <p>Mebourne, Australia</p>
+      <p>Mebourne, Australia.</p>
     </div>
   </footer>
 );
