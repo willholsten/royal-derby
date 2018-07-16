@@ -5,8 +5,6 @@ import Fade from "react-reveal/Fade";
 
 import "./style.scss";
 
-const profile = "./images/profile.png";
-
 export default class About extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
