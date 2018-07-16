@@ -1,0 +1,54 @@
+@import '../../styles/base/settings';
+@import '../../styles/base/base';
+.functions-page {
+  background: $page-background;
+  @extend %page-wrapper;
+  min-height: unset;
+}
+
+.content-container {
+  @extend %content-container;
+  min-height: unset;
+  p {
+    text-align: left;
+    margin-bottom: 20px;
+    color: rgba($primary, .75);
+  }
+}
+
+.functions-header {
+  background: url('./images/eat-drink.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.accommodation-content {
+  @extend %container-content-middle;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.accommodation-content>div {
+  padding: $l-size $m-size;
+  background: $background-container;
+  ul {
+    margin-bottom: $l-size;
+  }
+  li {
+    text-align: left;
+    color: $primary;
+  }
+}
+
+.button-about {
+  display: inline-block;
+  max-width: 300px;
+}
+
+@media (min-width: $tablet) {
+  .accommodation-content>div {
+    padding: $l-size;
+  }
+}

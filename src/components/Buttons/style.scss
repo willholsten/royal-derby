@@ -1,19 +1,19 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
 .button-primary {
-  background: $primary;
+  background: white;
   width: 100%;
   min-width: 200px;
   max-width: 350px;
-  border-radius: 3px;
   border: none;
   padding: 2rem 2.5rem;
-  margin: $m-size 0;
-  font: 500 1.2rem/1.2rem 'Roboto', Helvetica, sans-serif;
-  letter-spacing: 1.2px;
+  border-radius: 3px;
+  margin: $m-size auto;
+  font: 500 1.4rem/1.2rem 'Roboto', Helvetica, sans-serif;
+  letter-spacing: 1.5px;
   cursor: pointer;
   text-transform: uppercase;
-  color: white;
+  color: $primary;
   transition: 0.2s ease-in-out;
 }
 
@@ -23,6 +23,8 @@
 }
 
 .button-primary:hover {
+  background: white;
+  color: $primary;
   .arrow {
     transform: translate(0.5em, 0);
   }
@@ -31,6 +33,6 @@
 @media (min-width: 720px) {
   .button-primary {
     width: unset;
-    margin: $xl-size 0;
+    margin: $xl-size $m-size;
   }
 }

@@ -11,10 +11,8 @@ const Header = props => (
   <header>
     <div className="header-content">
       <NavLink to="/" exact={true}>
-        <Fade delay={1000} cascade>
-          <LogoMobile className="logo-mobile" />
-          <LogoDesktop className="logo-desktop" />
-        </Fade>
+        <LogoMobile className="logo-mobile" />
+        <LogoDesktop className="logo-desktop" />
       </NavLink>
       <div className="navigation-desktop">
         <NavLink to="/eat-drink" activeClassName="is-active" exact={true}>

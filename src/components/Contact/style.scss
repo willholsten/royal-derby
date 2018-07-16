@@ -8,13 +8,6 @@
   background: $page-background;
   @extend %page-wrapper;
   min-height: unset;
-  .contact-content {
-    @extend %container-content-middle;
-    flex-direction: column;
-    width: 500px;
-    max-width: 100%;
-    text-align: center;
-  }
   h5 {
     color: $primary;
   }
@@ -22,27 +15,28 @@
     color: $primary
   }
   p {
+    color: $primary;
     width: 500px;
     max-width: 100%;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     text-align: center;
   }
 }
 
-.contact-details {
-  display: flex;
+.contact-content {
+  @extend %container-content-middle;
+  background: $background-container;
   flex-direction: column;
   justify-content: center;
-  margin: 0 $xxl-size $xl-size;
-  >div {
-    margin: $m-size 0;
-  }
+  margin: 0 auto;
+  padding: $l-size $m-size;
 }
 
 form {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 input,
@@ -50,7 +44,7 @@ textarea {
   display: block;
   width: 600px;
   max-width: 100%;
-  background: $background-container;
+  background: rgba(255, 255, 255, .4);
   border-radius: 3px;
   padding: $m-size;
   color: $primary;
@@ -62,7 +56,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  background: darken($background-container, 2%);
+  background: white;
   outline: none;
 }
 
@@ -77,21 +71,8 @@ textarea {
   min-height: 200px;
 }
 
-@media (min-width: 480px) {
-  .contact-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: $l-size 0 $xxl-size;
-    >div {
-      margin: 0 $l-size;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .contact-details {
-    display: flex;
-    flex-direction: row;
+@media (min-width: $tablet) {
+  .contact-content {
+    padding: $l-size;
   }
 }

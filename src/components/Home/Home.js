@@ -1,37 +1,33 @@
 import React from "react";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Fade from "react-reveal/Fade";
-import Type from "./TypeIt.js";
 import "./style.scss";
 import "./animation.scss";
 
 const background = "./images/background.jpg";
 const background1 = "./images/background1.jpg";
 const background2 = "./images/background2.jpg";
+const background3 = "./images/background3.jpg";
+const background4 = "./images/background4.jpg";
 
 const Home = props => (
   <div>
-    <div className="landing-container">
-      <div id="crossfade">
-        <img src={require(`${background}`)} />
-        <img src={require(`${background1}`)} />
-        <img src={require(`${background2}`)} />
-        <img src={require(`${background}`)} />
-        <img src={require(`${background1}`)} />
+    <div className="hero-container">
+      <div className="hero-content">
+        <h1>Welcome to the Derby</h1>
+        <PrimaryButton
+          className="button-primary button-landing"
+          link="/contact"
+          label="Make a booking"
+        />
       </div>
-      <div className="landing-content">
-        <Fade delay={6000}>
-          <p>
-            A front end developer based in London. If you have a project in
-            mind, I’d love to hear about it!
-          </p>
-
-          <PrimaryButton
-            className="button-primary button-landing"
-            link="/contact"
-            label="Get in Touch"
-          />
-        </Fade>
+    </div>
+    <div className="secondary-hero-container">
+      <div className="whats-on">
+        <h2>What's On</h2>
+      </div>
+      <div className="functions">
+        <h2>Functions</h2>
       </div>
     </div>
   </div>

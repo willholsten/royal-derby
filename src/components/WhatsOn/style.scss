@@ -1,0 +1,56 @@
+@import '../../styles/base/settings';
+@import '../../styles/base/base';
+.whats-on-page {
+  background: $page-background;
+  @extend %page-wrapper;
+  h3 {
+    color: $primary;
+    display: inline-block;
+    margin: $s-size;
+    vertical-align: middle;
+  }
+  h4 {
+    margin: $xl-size $m-size $m-size;
+  }
+  p {
+    color: rgba($primary, .75);
+    margin: $s-size $m-size $xl-size;
+  }
+}
+
+.whats-on-header {
+  background: url('./images/whats-on.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.whats-on-image {
+  max-width: 100%;
+}
+
+.whats-on-content {
+  @extend %container-content-middle;
+  flex-wrap: wrap;
+  text-align: left;
+  >div {
+    margin: $s-size 0;
+    background: $background-container;
+  }
+}
+
+@media (min-width: $tablet) {
+  .whats-on-content>div {
+    margin: $m-size;
+    width: calc(50% - (2*1.2rem));
+  }
+}
+
+@media (min-width: $desktop) {
+  .whats-on-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .whats-on-content>div {
+    width: calc(33.33% - (3*1.2rem));
+  }
+}

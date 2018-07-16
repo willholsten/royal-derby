@@ -1,5 +1,5 @@
 // Colours
-$primary: #212B43;
+$primary: #212121;
 $secondary: #347FC4;
 $page-background: #f7f7f7;
 $background-container: #f1f1f1;
@@ -20,7 +20,6 @@ $desktop: 1200px;
 // Mixins
 %page-wrapper {
   position: relative;
-  padding: $xl-size $s-size;
   color: white;
   text-align: center;
   overflow: hidden;
@@ -43,9 +42,10 @@ $desktop: 1200px;
   margin: 0 auto;
 }
 
-@media (min-width: 720px) {
+@media (min-width: $tablet) {
   %page-wrapper {
     min-height: unset;
+    padding: $xl-size 0;
   }
   %container-content-middle {
     flex-direction: row;

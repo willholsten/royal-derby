@@ -7,14 +7,13 @@ import styled from "styled-components";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import About from "../components/About/About";
 import Home from "../components/Home/Home";
-import Services from "../components/Services/Services";
-import Work from "../components/Work/Work";
+import EatDrink from "../components/EatDrink/EatDrink";
+import WhatsOn from "../components/WhatsOn/WhatsOn";
+import Social from "../components/Social/Social";
+import Functions from "../components/Functions/Functions";
+import Accommodation from "../components/Accommodation/Accommodation";
 import Contact from "../components/Contact/Contact";
-
-import Apps from "../components/Apps/Apps";
-import Clock from "../components/Apps/Clock/Clock";
 
 import Success from "../components/Contact/Success";
 import NotFoundPage from "../components/NotFoundPage";
@@ -24,17 +23,16 @@ class AppRouter extends React.Component {
     return (
       <div>
         <Header />
+        <BurgerMenu />
         <div className="page-container" id="outer-container">
-          <BurgerMenu />
-
           <main id="page-wrap">
             <Switch>
               <Route path="/" component={Home} exact={true} />
-              <Route path="/eat-drink" component={About} />
-              <Route path="/whats-on" component={Services} />
-              <Route path="/social" component={Work} />
-              <Route path="/functions" component={Contact} />
-              <Route path="/accommodation" component={Apps} exact={true} />
+              <Route path="/eat-drink" component={EatDrink} />
+              <Route path="/whats-on" component={WhatsOn} />
+              <Route path="/social" component={Social} />
+              <Route path="/functions" component={Functions} />
+              <Route path="/accommodation" component={Accommodation} />
               <Route path="/contact" component={Contact} />
               <Route path="/form-submission" component={Success} />
               <Route component={NotFoundPage} />

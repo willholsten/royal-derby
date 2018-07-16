@@ -18,59 +18,65 @@ export default class Contact extends React.Component {
           description="If you have a new or existing project you would like to work on, I'd
       love to hear about it! Please fill in the form below to get started!"
         />
-        <div className="contact-page top-shadow">
-          <div className="contact-details">
-            <Fade delay={3000} up>
+        <div className="contact-page">
+          <div className="contact-content">
+            <Fade up>
+              <p>
+                We would love to hear from you, please get in touch by calling
+                or completing the enquiry form below.{" "}
+              </p>
               <div>
-                <h5>Phone</h5>
-                <h4>
-                  <a href="tel:+447403533961">07403 533 961</a>
-                </h4>
-              </div>
-              <div>
-                <h5>Email</h5>
-                <h4>
-                  <a href="mailto:mail@willholsten.com">mail@willholsten.com</a>
-                </h4>
+                <PrimaryButton
+                  className="button-primary button-contact"
+                  link=""
+                  type="submit"
+                  label="Phone"
+                />
+                <PrimaryButton
+                  className="button-primary button-contact"
+                  link=""
+                  type="submit"
+                  label="Email"
+                />
               </div>
             </Fade>
-          </div>
 
-          <Fade delay={3500} up>
-            <form method="post" action="/form-submission">
-              <input type="hidden" name="form-name" value="contact" />
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                autocomplete="name"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                autocomplete="email"
-              />
-              <input
-                type="text"
-                name="existing-domain"
-                placeholder="Existing Domain"
-                autocomplete="off"
-              />
-              <textarea
-                type="text"
-                name="message"
-                placeholder="Message"
-                autocomplete="off"
-              />
-              <PrimaryButton
-                className="button-primary button-contact"
-                link=""
-                type="submit"
-                label="Submit"
-              />
-            </form>
-          </Fade>
+            <Fade up>
+              <form method="post" action="/form-submission">
+                <input type="hidden" name="form-name" value="contact" />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  autocomplete="name"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                />
+                <input
+                  type="text"
+                  name="existing-domain"
+                  placeholder="Existing Domain"
+                  autocomplete="off"
+                />
+                <textarea
+                  type="text"
+                  name="message"
+                  placeholder="Message"
+                  autocomplete="off"
+                />
+                <PrimaryButton
+                  className="button-primary button-contact"
+                  link=""
+                  type="submit"
+                  label="Submit"
+                />
+              </form>
+            </Fade>
+          </div>
         </div>
       </div>
     );
