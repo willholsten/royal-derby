@@ -1,7 +1,6 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
-.functions-page {
-  background: $page-background;
+.accommodation-page {
   @extend %page-wrapper;
   min-height: unset;
 }
@@ -16,8 +15,8 @@
   }
 }
 
-.functions-header {
-  background: url('./images/eat-drink.jpg');
+.accommodation-header {
+  background: url('./images/accommodation.jpg');
   background-position: center;
   background-size: cover;
 }

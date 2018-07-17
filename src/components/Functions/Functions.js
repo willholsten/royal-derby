@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 
 import "./style.scss";
 
-const profile = "./images/profile.png";
+const partystar = "./images/partystar.png";
 
 export default class Functions extends React.Component {
   componentDidMount() {
@@ -35,19 +35,30 @@ export default class Functions extends React.Component {
                     enjoyable and unforgettable function that will be remembered
                     and talked about for years to come.
                   </p>
-
                   <PrimaryButton
                     link="/images/Will-Holsten-CV.pdf"
+                    iconRight={<i className="fas fa-arrow-right arrow" />}
+                    label="Enquire Now"
+                  />
+                  <PrimaryButton
+                    link="/images/RDH-Function-Pack.pdf"
+                    target="_blank"
+                    iconRight={<i className="fas fa-arrow-right arrow" />}
                     label="Rooms & Packages"
                   />
                   <PrimaryButton
-                    link="/images/Will-Holsten-CV.pdf"
-                    label="Booking Enquiry"
-                  />
-                  <PrimaryButton
-                    link="/images/Will-Holsten-CV.pdf"
+                    link="/images/RDH-Function-Terms.pdf"
+                    target="_blank"
+                    iconRight={<i className="fas fa-arrow-right arrow" />}
                     label="Terms"
                   />
+                  <h4>View our function listing on Partystar</h4>
+                  <a
+                    target="_blank"
+                    href="http://www.partystar.com.au/functions/venue/652a/"
+                  >
+                    <img className="partystar" src={require(`${partystar}`)} />
+                  </a>
                 </div>
               </Fade>
             </div>

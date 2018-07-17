@@ -4,17 +4,21 @@
   background: $page-background;
   @extend %page-wrapper;
   h3 {
-    color: $primary;
-    display: inline-block;
     margin: $s-size;
     vertical-align: middle;
   }
+  h3 {
+    text-align: center;
+  }
   h4 {
-    margin: $xl-size $m-size $m-size;
+    margin: $m-size;
+    color: #ddbd5c;
+    text-align: center;
   }
   p {
     color: rgba($primary, .75);
-    margin: $s-size $m-size $xl-size;
+    padding: $m-size;
+    text-align: center !important;
   }
 }
 
@@ -31,26 +35,26 @@
 .whats-on-content {
   @extend %container-content-middle;
   flex-wrap: wrap;
-  text-align: left;
   >div {
-    margin: $s-size 0;
+    margin: $s-size;
     background: $background-container;
   }
 }
 
 @media (min-width: $tablet) {
-  .whats-on-content>div {
-    margin: $m-size;
-    width: calc(50% - (2*1.2rem));
+  .whats-on-content {
+    flex-direction: row;
+    >div {
+      width: calc(50% - (2* 1.2rem));
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .whats-on-content {
-    flex-direction: row;
     justify-content: space-between;
   }
   .whats-on-content>div {
-    width: calc(33.33% - (3*1.2rem));
+    width: calc(33.33% - (2*1.2rem));
   }
 }

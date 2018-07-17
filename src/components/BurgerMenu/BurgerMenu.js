@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Spring } from "react-burgers";
-import { reveal as Menu } from "react-burger-menu";
+import { stack as Menu } from "react-burger-menu";
 
 import Fade from "react-reveal/Fade";
 import "./style.scss";
@@ -70,16 +70,6 @@ class BurgerMenu extends React.Component {
           width={"100%"}
         >
           <NavLink
-            to="/"
-            activeClassName="is-active"
-            exact={true}
-            onClick={() => this.closeMenu()}
-            className="logo-sidebar-container"
-          >
-            <img className="logo-sidebar" src={require(`${logoSidebar}`)} />
-          </NavLink>
-
-          <NavLink
             to="/eat-drink"
             activeClassName="is-active"
             exact={true}
@@ -104,7 +94,7 @@ class BurgerMenu extends React.Component {
             Social
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/functions"
             activeClassName="is-active"
             exact={true}
             onClick={() => this.closeMenu()}
@@ -112,7 +102,7 @@ class BurgerMenu extends React.Component {
             Functions
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/Accommodation"
             activeClassName="is-active"
             exact={true}
             onClick={() => this.closeMenu()}

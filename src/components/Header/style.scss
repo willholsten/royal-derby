@@ -2,15 +2,17 @@
 @import '../../styles/base/base';
 header {
   position: relative;
-  z-index: 10;
+  z-index: 999;
 }
 
 .header-content {
-  position: absolute;
+  position: fixed;
   display: flex;
   height: 70px;
   justify-content: center;
   width: 100%;
+  background: $primary;
+  z-index: 999;
 }
 
 .logo-mobile {
@@ -32,8 +34,6 @@ header {
   header {
     position: fixed;
     height: 100vh;
-    width: 230px;
-    background: #212121;
     z-index: 999;
   }
   .header-content {
@@ -43,6 +43,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     overflow: scroll;
+    width: 230px;
   }
   .navigation-desktop {
     width: 100%;
@@ -53,7 +54,7 @@ header {
       font-size: 1.4rem;
       color: white;
       text-align: right;
-      padding: 15px 30px 15px 0;
+      padding: 25px 30px 25px 0;
       border-top: 1px solid #272727;
       cursor: pointer;
       text-transform: uppercase;
@@ -79,10 +80,9 @@ header {
   }
   .logo-desktop {
     display: block;
-    margin-top: 10px;
     fill: white;
-    width: 110px;
+    width: 100px;
     z-index: 1;
-    margin: $xl-size auto;
+    margin: $xl-size auto $xxl-size;
   }
 }

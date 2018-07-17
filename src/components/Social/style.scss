@@ -1,12 +1,12 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
-.eat-drink-page {
+.social-page {
   background: $page-background;
   @extend %page-wrapper;
   min-height: unset;
 }
 
-.content-container {
+.social-content {
   @extend %content-container;
   min-height: unset;
   p {
@@ -16,30 +16,20 @@
   }
 }
 
-.eat-drink-header {
-  background: url('./images/eat-drink.jpg');
+.social-header {
+  background: url('./images/social.jpg');
   background-position: center;
   background-size: cover;
 }
 
-.eat-drink-content {
+.social-content {
   @extend %container-content-middle;
   align-items: center;
   justify-content: center;
 }
 
-.eat-drink-content>div {
-  background: $background-container;
-  padding: $l-size $m-size;
+.instagram {
+  height: 100%;
 }
 
-.button-about {
-  display: inline-block;
-  max-width: 300px;
-}
-
-@media (min-width: 720px) {
-  .eat-drink-content>div {
-    padding: $l-size;
-  }
-}
+@media (min-width: $tablet) {}

@@ -29,11 +29,13 @@ export default class Contact extends React.Component {
                 <PrimaryButton
                   className="button-primary button-contact"
                   link=""
+                  iconLeft={<i className="fas fa-phone left-icon" />}
                   type="submit"
                   label="Phone"
                 />
                 <PrimaryButton
                   className="button-primary button-contact"
+                  iconLeft={<i className="fas fa-envelope left-icon" />}
                   link=""
                   type="submit"
                   label="Email"
@@ -70,6 +72,7 @@ export default class Contact extends React.Component {
                 />
                 <PrimaryButton
                   className="button-primary button-contact"
+                  iconRight={<i className="fas fa-arrow-right arrow" />}
                   link=""
                   type="submit"
                   label="Submit"

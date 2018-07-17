@@ -1,7 +1,6 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
 .functions-page {
-  background: $page-background;
   @extend %page-wrapper;
   min-height: unset;
 }
@@ -10,14 +9,13 @@
   @extend %content-container;
   min-height: unset;
   p {
-    text-align: left;
     margin-bottom: 20px;
     color: rgba($primary, .75);
   }
 }
 
 .functions-header {
-  background: url('./images/eat-drink.jpg');
+  background: url('./images/functions.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -36,6 +34,12 @@
 .button-about {
   display: inline-block;
   max-width: 300px;
+}
+
+.partystar {
+  display: block;
+  width: 200px;
+  margin: $l-size 0;
 }
 
 @media (min-width: $tablet) {

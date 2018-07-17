@@ -19,11 +19,11 @@ a {
 
 // Text
 h1 {
-  font: 400 6rem/7rem 'Roboto', Helvetica, sans-serif;
-  font-family: 'Euphoria Script', cursive;
+  font: 400 6rem/7rem 'Euphoria Script', cursive;
   padding: 0;
   margin: $m-size 0;
   color: white;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
 }
 
 h2 {
@@ -37,19 +37,20 @@ h2 {
 }
 
 h3 {
-  font: 400 2.5rem 'Roboto', Helvetica, sans-serif;
-  color: white;
+  font: 400 2.5rem 'Euphoria Script', cursive;
+  color: lighten($primary, 20%);
   padding: 0;
   margin: $m-size 0;
   letter-spacing: 0.5px;
 }
 
 h4 {
-  font: 1.4rem 'Roboto', Helvetica, sans-serif;
-  color: #C6AB5A;
+  font: 1.6rem 'Roboto', Helvetica, sans-serif;
+  color: #ddbd5c;
   margin: $m-size 0;
   text-transform: uppercase;
   text-align: left;
+  letter-spacing: 1.5px;
 }
 
 h5 {
@@ -116,10 +117,10 @@ p {
     font-size: 6rem;
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   h5 {
     font-size: 1.8rem;
@@ -129,7 +130,8 @@ p {
   }
   p {
     font-size: 1.6rem;
-    line-height: 3rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.5px;
   }
   .is-active {
     font-weight: 400;

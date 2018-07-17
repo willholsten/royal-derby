@@ -5,11 +5,8 @@
   background: url('images/background.jpg');
   background-size: cover;
   height: 90vh;
-  color: white;
   text-align: center;
-  position: relative;
   display: flex;
-  align-content: center;
 }
 
 .hero-container::before {
@@ -28,55 +25,43 @@
   max-width: 100%;
   z-index: 10;
   padding: $s-size;
-  img {
-    max-width: 100%;
-  }
-  h1 {
-    color: white;
-    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
-  }
-  p {
-    font: 400 2rem/3rem 'Roboto', helvetica, sans-serif;
-    color: white;
-    width: 500px;
-    max-width: 100%;
-    margin: 0 auto
-  }
 }
 
 .secondary-hero-container {
   display: flex;
   flex-direction: column;
-  >div {
-    width: 100%;
-    position: relative;
-    height: 500px;
-    h2 {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      height: 100px;
-      text-align: center;
-    }
-    img {
-      object-fit: cover;
-      width: 100%;
-    }
+  h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100px;
+    text-align: center;
   }
   .whats-on {
+    position: relative;
     background: url('images/whats-on.jpg');
     background-position: center;
     background-size: cover;
+    transition: all 0.2s ease-in-out;
+    height: 500px;
   }
   .functions {
+    position: relative;
     background: url('images/background.jpg');
     background-position: center;
     background-size: cover;
+    transition: all 0.2s ease-in-out;
+    height: 500px;
   }
-  div::before {
+  .whats-on:hover,
+  .functions:hover {
+    border: 2px solid #ddbd5c;
+  }
+  .whats-on::before,
+  .functions::before {
     content: "";
     display: block;
     height: 100%;
@@ -84,7 +69,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .3);
   }
 }
 
@@ -97,7 +82,7 @@
 @media (min-width: $desktop) {
   .secondary-hero-container {
     flex-direction: row;
-    >div {
+    >a {
       width: 50%;
     }
   }

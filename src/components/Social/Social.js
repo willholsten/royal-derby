@@ -13,21 +13,21 @@ export default class About extends React.Component {
   render(props) {
     return (
       <div>
-        <PageHeader className="eat-drink-header" header="#royalderbyhotel" />
-        <div className="eat-drink-page">
+        <PageHeader className="social-header" header="#royalderbyhotel" />
+        <div className="social-page">
           <div className="content-container">
-            <div className="eat-drink-content">
+            <div className="social-content">
               <Fade up>
                 <div class="instagram">
                   <a
-                    href="https://instawidget.net/v/user/the_stolberg"
-                    id="link-105770ddb46305dacd2c891e7dbe908f673d4a1522ac5a11272c878eaad59f8f"
+                    href="https://instawidget.net/v/user/royalderbyhotel"
+                    id="link-b1e3ed5f8adc9809933062b88359f51e7ac1b9e9fc0e86c636f790427d8029c5"
                   >
-                    @the_stolberg
+                    @royalderbyhotel
                   </a>
-                  <script src="https://instawidget.net/js/instawidget.js?u=105770ddb46305dacd2c891e7dbe908f673d4a1522ac5a11272c878eaad59f8f&width=900px" />
+                  <script src="https://instawidget.net/js/instawidget.js?u=b1e3ed5f8adc9809933062b88359f51e7ac1b9e9fc0e86c636f790427d8029c5&width=900px" />
                 </div>
-                <div id="instafeed" />
+                <div id="instafeed">a</div>
               </Fade>
             </div>
           </div>

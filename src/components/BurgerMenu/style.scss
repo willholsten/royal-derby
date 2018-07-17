@@ -1,7 +1,7 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
 .burger-container {
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 10px;
   z-index: 999;
@@ -21,31 +21,40 @@
   margin: 0px !important;
   background: darken($primary, 10%);
   height: 70px;
+  padding: 20px !important;
 }
 
 .logo-sidebar {
   max-width: 240px !important;
   padding: 0 !important;
-  margin: 15px 0 0 50px !important;
+  margin: 0px 0 0 50px !important;
   text-align: right !important;
 }
 
 #sidebar {
   background: $primary;
   z-index: 900 !important;
-  margin-top: 0;
+  margin-top: 70px;
 }
 
 .bm-item {
-  padding: 5px 25px;
-  margin: 25px 0;
-  font: normal 1.8rem 'Roboto', Helvetica, sans-serif;
+  padding: 25px;
+  margin: 0;
+  font: normal 1.4rem 'Roboto', Helvetica, sans-serif;
   color: white;
+  border-top: 1px solid #272727;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   z-index: 999 !important;
 }
 
-.bm-item:hover {
-  color: $secondary;
+a.bm-item:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, .05);
+}
+
+.bm-overlay {
+  display: none !important;
 }
 
 @media (min-width: $tablet) {

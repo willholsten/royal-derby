@@ -40,11 +40,14 @@ export default class Functions extends React.Component {
                   </p>
 
                   <PrimaryButton
-                    link="/images/Will-Holsten-CV.pdf"
+                    link="/images/RDH-Room-Rates.pdf"
+                    iconRight={<i className="fas fa-arrow-right arrow" />}
+                    target="_blank"
                     label="Room Rates"
                   />
                   <PrimaryButton
                     link="/images/Will-Holsten-CV.pdf"
+                    iconRight={<i className="fas fa-arrow-right arrow" />}
                     label="Enquire Now"
                   />
 
@@ -60,9 +63,17 @@ export default class Functions extends React.Component {
                     <li>Laundry</li>
                   </ul>
                   <h4>Getting There</h4>
-                  <p><b>From Southern Cross Station:</b> Get on a tram at spencer st route 112 (stop 1), going up Collin st, onto Gisborne st and continues up Brunswick st Street directly to the royal derby hotel.</p>
                   <p>
-                  <b>From the airport:</b> The Starbus located at Qantas domestic can deliver you to the corner of Nicholson st and Alexandra prd, its then a 50m walk down Alexandra prd to the corner of Brunswick st where we are located.
+                    <b>From Southern Cross Station:</b> Get on a tram at spencer
+                    st route 112 (stop 1), going up Collin st, onto Gisborne st
+                    and continues up Brunswick st Street directly to the royal
+                    derby hotel.
+                  </p>
+                  <p>
+                    <b>From the airport:</b> The Starbus located at Qantas
+                    domestic can deliver you to the corner of Nicholson st and
+                    Alexandra prd, its then a 50m walk down Alexandra prd to the
+                    corner of Brunswick st where we are located.
                   </p>
                 </div>
               </Fade>

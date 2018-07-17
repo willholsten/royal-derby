@@ -1,7 +1,6 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
 .eat-drink-page {
-  background: $page-background;
   @extend %page-wrapper;
   min-height: unset;
 }

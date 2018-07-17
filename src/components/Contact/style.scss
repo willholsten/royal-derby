@@ -1,11 +1,12 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
 .contact-header {
-  background: $contact !important;
+  background: url('./images/contact.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .contact-page {
-  background: $page-background;
   @extend %page-wrapper;
   min-height: unset;
   h5 {

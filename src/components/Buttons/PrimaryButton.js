@@ -6,7 +6,9 @@ import "./style.scss";
 const PrimaryButton = props => (
   <a target={props.target} href={props.link}>
     <button className="button-primary">
-      {props.label} <i className="fas fa-arrow-right arrow" />
+      {props.iconLeft}
+      {props.label}
+      {props.iconRight}
     </button>
   </a>
 );
