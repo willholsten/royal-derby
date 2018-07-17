@@ -19,7 +19,7 @@ export default class Functions extends React.Component {
         <div className="functions-page">
           <div className="content-container">
             <div className="accommodation-content">
-              <Fade up>
+              <Fade delay={2000} up>
                 <div>
                   <h4>General</h4>
                   <p>

@@ -11,7 +11,7 @@ export default class PageHeader extends React.Component {
       <div>
         <div className={classnames("page-header", this.props.className)}>
           <div className="page-header-content">
-            <Zoom delay={1500} cascade>
+            <Zoom delay={1000} cascade>
               <h1>{this.props.header}</h1>
             </Zoom>
           </div>

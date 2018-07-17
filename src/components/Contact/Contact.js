@@ -2,6 +2,13 @@ import React from "react";
 import PageHeader from "../PageHeader/PageHeader";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Fade from "react-reveal/Fade";
+import { compose, withProps } from "recompose";
+import {
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  Marker
+} from "react-google-maps";
 import "./style.scss";
 
 export default class Contact extends React.Component {
@@ -20,7 +27,7 @@ export default class Contact extends React.Component {
         />
         <div className="contact-page">
           <div className="contact-content">
-            <Fade up>
+            <Fade delay={2000} up>
               <p>
                 We would love to hear from you, please get in touch by calling
                 or completing the enquiry form below.{" "}
@@ -43,7 +50,7 @@ export default class Contact extends React.Component {
               </div>
             </Fade>
 
-            <Fade up>
+            <Fade delay={2500} up>
               <form method="post" action="/form-submission">
                 <input type="hidden" name="form-name" value="contact" />
                 <input
@@ -80,6 +87,21 @@ export default class Contact extends React.Component {
               </form>
             </Fade>
           </div>
+          googleMapURL:
+          "https://maps.googleapis.com/maps/api/js?key=AIzaSyBNk5f6by9Da9oUQsP090cKI3T0FceKeik&v=3.exp&libraries=geometry,drawing,places",
+          loadingElement: <div style={{ height: `100%` }} />, containerElement:{" "}
+          <div style={{ height: `400px` }} />, mapElement:{" "}
+          <div style={{ height: `100%` }} />
+          }), withScriptjs, withGoogleMap )(props => (
+          <GoogleMap
+            defaultZoom={8}
+            defaultCenter={{ lat: -34.397, lng: 150.644 }}
+          >
+            {props.isMarkerShown && (
+              <Marker position={{ lat: -34.397, lng: 150.644 }} />
+            )}
+          </GoogleMap>
+          ));
         </div>
       </div>
     );

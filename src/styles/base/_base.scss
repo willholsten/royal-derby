@@ -37,7 +37,7 @@ h2 {
 }
 
 h3 {
-  font: 400 2.5rem 'Euphoria Script', cursive;
+  font: 400 4rem 'Euphoria Script', cursive;
   color: lighten($primary, 20%);
   padding: 0;
   margin: $m-size 0;
@@ -46,7 +46,7 @@ h3 {
 
 h4 {
   font: 1.6rem 'Roboto', Helvetica, sans-serif;
-  color: #ddbd5c;
+  color: $secondary;
   margin: $m-size 0;
   text-transform: uppercase;
   text-align: left;

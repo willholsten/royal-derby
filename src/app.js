@@ -7,7 +7,7 @@ import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 import WebFont from "webfontloader";
 import ReactGA from "react-ga";
-ReactGA.initialize("UA-121952622-1");
+ReactGA.initialize("UA-121952622-4");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 WebFont.load({

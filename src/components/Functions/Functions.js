@@ -19,7 +19,7 @@ export default class Functions extends React.Component {
         <div className="functions-page">
           <div className="content-container">
             <div className="functions-content">
-              <Fade up>
+              <Fade delay={2000} up>
                 <div>
                   <p>
                     At the Royal Derby Hotel, we pride ourselves on working with

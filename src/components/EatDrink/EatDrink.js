@@ -19,7 +19,7 @@ export default class About extends React.Component {
         <div className="eat-drink-page">
           <div className="content-container">
             <div className="eat-drink-content">
-              <Fade up>
+              <Fade delay={2000} up>
                 <div>
                   <p>
                     Food is an integral part of the overall experience at the

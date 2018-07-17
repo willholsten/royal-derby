@@ -23,7 +23,7 @@ export default class WhatsOn extends React.Component {
         <PageHeader className="whats-on-header" header="What's On" />
         <div className="whats-on-page">
           <div className="content-container">
-            <Fade up>
+            <Fade delay={2000} up>
               <div className="whats-on-content">
                 <WhatsOnElement
                   image={monday}
