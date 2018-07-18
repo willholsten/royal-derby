@@ -1,31 +1,9 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
-.social-page {
-  background: $page-background;
-  @extend %page-wrapper;
-  min-height: unset;
-}
-
-.social-content {
-  @extend %content-container;
-  min-height: unset;
-  p {
-    text-align: left;
-    margin-bottom: 20px;
-    color: rgba($primary, .75);
-  }
-}
-
 .social-header {
   background: url('./images/social.jpg');
   background-position: center;
   background-size: cover;
-}
-
-.social-content {
-  @extend %container-content-middle;
-  align-items: center;
-  justify-content: center;
 }
 
 .instagram {

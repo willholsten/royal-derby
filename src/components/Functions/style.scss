@@ -1,19 +1,5 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
-.functions-page {
-  @extend %page-wrapper;
-  min-height: unset;
-}
-
-.content-container {
-  @extend %content-container;
-  min-height: unset;
-  p {
-    margin-bottom: 20px;
-    color: rgba($primary, .75);
-  }
-}
-
 .functions-header {
   background: url('./images/functions.jpg');
   background-position: center;
@@ -21,25 +7,15 @@
 }
 
 .functions-content {
-  @extend %container-content-middle;
-  align-items: center;
-  justify-content: center;
-}
-
-.functions-content>div {
-  background: $background-container;
-  padding: $l-size $m-size;
-}
-
-.button-about {
-  display: inline-block;
-  max-width: 300px;
+  h4 {
+    text-align: center;
+  }
 }
 
 .partystar {
   display: block;
   width: 200px;
-  margin: $l-size 0;
+  margin: $l-size auto;
   opacity: 0.8;
   transition: all 0.2s ease-in-out;
 }
@@ -48,8 +24,4 @@
   opacity: 1;
 }
 
-@media (min-width: $tablet) {
-  .functions-content>div {
-    padding: $l-size;
-  }
-}
+@media (min-width: $tablet) {}

@@ -24,7 +24,7 @@ const Footer = props => (
         </p>
       </div>
       <div>
-        <h6>Partner</h6>
+        <h6>Partners With</h6>
         <a href="https://www.stolberg.com.au">
           <Stolberg className="stolberg-logo" />
         </a>

@@ -7,8 +7,6 @@ import Fade from "react-reveal/Fade";
 import "./style.scss";
 import "./hamburger.css";
 
-const logoSidebar = "./images/logo-sidebar.png";
-
 class BurgerMenu extends React.Component {
   constructor(props) {
     super(props);

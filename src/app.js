@@ -12,7 +12,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 WebFont.load({
   google: {
-    families: ["Roboto:100,300,400,500,700"]
+    families: ["Open+Sans:100,300,400,500,700"]
   }
 });
 

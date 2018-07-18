@@ -4,7 +4,7 @@ import { Route, Switch, withRouter } from "react-router-dom";
 import BurgerMenu from "../components/BurgerMenu/BurgerMenu";
 
 import styled from "styled-components";
-
+import BookingModal from "../components/BookingModal/BookingModal";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Home from "../components/Home/Home";
@@ -14,12 +14,36 @@ import Social from "../components/Social/Social";
 import Functions from "../components/Functions/Functions";
 import Accommodation from "../components/Accommodation/Accommodation";
 import Contact from "../components/Contact/Contact";
-
+import Booking from "../components/Booking/Booking";
 import Success from "../components/Contact/Success";
 import NotFoundPage from "../components/NotFoundPage";
 
 class AppRouter extends React.Component {
-  render() {
+  constructor() {
+    super();
+
+    this.state = {
+      modalIsOpen: true
+    };
+
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({ modalIsOpen: true });
+  }
+
+  afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    this.subtitle.style.color = "#f00";
+  }
+
+  closeModal() {
+    this.setState({ modalIsOpen: false });
+  }
+  render(props) {
     return (
       <div>
         <Header />
@@ -34,6 +58,7 @@ class AppRouter extends React.Component {
               <Route path="/functions" component={Functions} />
               <Route path="/accommodation" component={Accommodation} />
               <Route path="/contact" component={Contact} />
+              <Route path="/booking" component={Booking} />
               <Route path="/form-submission" component={Success} />
               <Route component={NotFoundPage} />
             </Switch>

@@ -14,24 +14,20 @@ export default class About extends React.Component {
     return (
       <div>
         <PageHeader className="social-header" header="#royalderbyhotel" />
-        <div className="social-page">
-          <div className="content-container">
-            <div className="social-content">
-              <Fade up>
-                <div class="instagram">
-                  <a
-                    href="https://instawidget.net/v/user/royalderbyhotel"
-                    id="link-b1e3ed5f8adc9809933062b88359f51e7ac1b9e9fc0e86c636f790427d8029c5"
-                  >
-                    @royalderbyhotel
-                  </a>
-                  <script src="https://instawidget.net/js/instawidget.js?u=b1e3ed5f8adc9809933062b88359f51e7ac1b9e9fc0e86c636f790427d8029c5&width=900px" />
-                </div>
-                <div id="instafeed">a</div>
-              </Fade>
+        <section className="section">
+          <div className="container">
+            <div class="instagram">
+              <a
+                href="https://instawidget.net/v/user/royalderbyhotel"
+                id="link-b1e3ed5f8adc9809933062b88359f51e7ac1b9e9fc0e86c636f790427d8029c5"
+              >
+                @royalderbyhotel
+              </a>
+              <script src="https://instawidget.net/js/instawidget.js?u=b1e3ed5f8adc9809933062b88359f51e7ac1b9e9fc0e86c636f790427d8029c5&width=900px" />
             </div>
+            <div id="instafeed">a</div>
           </div>
-        </div>
+        </section>
       </div>
     );
   }

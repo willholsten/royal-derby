@@ -20,7 +20,7 @@ const Home = props => (
         <PrimaryButton
           className="button-primary button-landing"
           iconRight={<i className="fas fa-arrow-right arrow" />}
-          link="/contact"
+          link="/booking"
           label="Make a booking"
         />
       </div>

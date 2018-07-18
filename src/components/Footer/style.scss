@@ -16,7 +16,11 @@ footer {
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
-  padding: $xl-size $s-size;
+  padding: $xl-size $l-size;
+  h6 {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
   p,
   a {
     display: block;
@@ -24,14 +28,16 @@ footer {
     font-size: 1.2rem;
     line-height: 2.2rem;
     font-weight: 100;
-    margin: 0 auto;
+    margin: 0;
     letter-spacing: 0.5px;
+    width: auto;
   }
 }
 
 .stolberg-logo {
   fill: white;
-  width: 160px;
+  width: 140px;
+  margin: $s-size 0;
 }
 
 .copyright {
@@ -43,12 +49,16 @@ footer {
   align-content: center;
   margin: 0 auto;
   margin-top: $l-size;
-  padding: $m-size $s-size;
+  padding: $m-size $l-size;
   p {
     color: rgba(255, 255, 255, .3);
     font-size: 1.2rem;
     line-height: 2.2rem;
     font-weight: 100;
+    margin: 0;
+  }
+  p:nth-child(2) {
+    text-align: right;
   }
 }
 

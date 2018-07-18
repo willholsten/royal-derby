@@ -1,10 +1,5 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
-header {
-  position: relative;
-  z-index: 999;
-}
-
 .header-content {
   position: fixed;
   display: flex;
@@ -30,6 +25,36 @@ header {
   display: none;
 }
 
+.modal {
+  background: $page-background;
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  padding: $xxl-size $m-size;
+  h1,
+  p {
+    text-align: center;
+    color: $primary;
+    text-shadow: none;
+  }
+  form {
+    position: relative;
+  }
+  span {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $primary;
+    font-size: 2.5rem;
+  }
+}
+
+.modal-container {
+  position: relative;
+}
+
 @media (min-width: $tablet) {
   header {
     position: fixed;
@@ -49,19 +74,21 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    a {
+    a,
+    span {
       opacity: 0.6;
       font-size: 1.4rem;
       color: white;
       text-align: right;
-      padding: 25px 30px 25px 0;
+      padding: 20px 30px 20px 0;
       border-top: 1px solid #272727;
       cursor: pointer;
       text-transform: uppercase;
       letter-spacing: 1px;
       transition: all 0.2s ease-in-out;
     }
-    a:hover {
+    a:hover,
+    span:hover {
       color: $secondary;
       opacity: 1;
       background: rgba(255, 255, 255, .05);
@@ -82,8 +109,20 @@ header {
   .logo-desktop {
     display: block;
     fill: white;
-    width: 100px;
+    width: 90px;
     z-index: 1;
-    margin: $xl-size auto $xxl-size;
+    margin: $xl-size auto;
+  }
+  .modal {
+    margin-left: 230px;
+    max-width: calc(100% - 230px);
+    span {
+      top: -$l-size;
+      right: -$l-size;
+    }
+  }
+  .modal-container {
+    width: 550px;
+    margin: 0 auto;
   }
 }

@@ -6,49 +6,38 @@
   background-size: cover;
 }
 
-.contact p {
+.booking p {
   width: 600px;
+  margin-bottom: $xl-size;
 }
 
-form {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
-input,
-textarea,
-  {
+select {
+  position: relative;
   display: block;
   width: 600px;
   max-width: 100%;
-  background: rgba(255, 255, 255, .4);
+  background: rgba(0, 0, 0, .05);
   border-radius: 3px;
-  padding: $m-size;
-  color: $primary;
+  color: lighten($primary, 40%);
   letter-spacing: 0.5px;
-  border: none;
   margin: 10px auto !important;
   font: 300 1.6rem/2rem 'Open Sans', Helvetica, sans-serif !important;
   border: 1px solid #e5e5e5;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: $m-size;
 }
 
-input:focus,
-textarea:focus {
-  background: white;
-  outline: none;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: lighten($primary, 40%);
-  font-weight: 300;
-  letter-spacing: 0.5px;
-}
-
-textarea {
-  min-height: 200px;
+select::after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #7daf99;
+  content: "f0d7";
+  z-index: 999;
+  font-family: FontAwesome;
+  font-size: 18px;
 }
 
 @media (min-width: $tablet) {}

@@ -1,31 +1,16 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
-.whats-on-page {
-  background: $page-background;
-  @extend %page-wrapper;
-  h3 {
-    margin: $s-size;
-    vertical-align: middle;
-  }
-  h3 {
-    text-align: center;
-  }
-  h4 {
-    margin: $m-size;
-    color: #ddbd5c;
-    text-align: center;
-  }
-  p {
-    color: rgba($primary, .75);
-    padding: $m-size;
-    text-align: center !important;
-  }
-}
-
 .whats-on-header {
   background: url('./images/whats-on.jpg');
   background-position: center;
   background-size: cover;
+}
+
+.whats-on-content {
+  h4 {
+    margin: $s-size;
+    text-align: center;
+  }
 }
 
 .whats-on-image {
@@ -33,27 +18,28 @@
 }
 
 .whats-on-content {
-  @extend %container-content-middle;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   >div {
-    margin: $s-size;
     background: $background-container;
+    margin: $s-size 0;
+  }
+  p {
+    padding: $s-size $s-size $m-size;
   }
 }
 
 @media (min-width: $tablet) {
   .whats-on-content {
-    flex-direction: row;
     >div {
       width: calc(50% - (2* 1.2rem));
+      margin: $s-size;
     }
   }
 }
 
 @media (min-width: $desktop) {
-  .whats-on-content {
-    justify-content: space-between;
-  }
   .whats-on-content>div {
     width: calc(33.33% - (2*1.2rem));
   }

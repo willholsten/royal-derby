@@ -1,8 +1,8 @@
 // Colours
 $primary: #212121;
 $secondary: #ddbd5c;
-$page-background: #f7f7f7;
-$background-container: #f1f1f1;
+$page-background: #f1f1f1;
+$background-container: #e5e5e5;
 // Spacing
 $s-size: 1.2rem;
 $m-size: 1.6rem;
@@ -13,39 +13,3 @@ $xxxl-size: 13rem;
 // Media Queries
 $tablet: 720px;
 $desktop: 1200px;
-// Mixins
-%page-wrapper {
-  position: relative;
-  color: white;
-  text-align: center;
-  overflow: hidden;
-  min-height: 100vh;
-  z-index: 10;
-  background: $background-container;
-}
-
-%content-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  min-height: calc(100vh - 314px);
-}
-
-%container-content-middle {
-  display: flex;
-  flex-direction: column;
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet) {
-  %page-wrapper {
-    min-height: unset;
-    padding: $xl-size 0;
-  }
-  %container-content-middle {
-    flex-direction: row;
-    margin: auto;
-  }
-}
