@@ -40,7 +40,7 @@ export default class Contact extends React.Component {
           </Fade>
           <Fade delay={500} up>
             <div className="container">
-              <form method="post">
+              <form method="post" name="contact-form">
                 <input type="hidden" name="contact-form" value="contact-form" />
                 <input
                   type="text"

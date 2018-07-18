@@ -24,7 +24,7 @@ export default class Contact extends React.Component {
                 hours.
               </p>
 
-              <form method="post" action="/form-submission">
+              <form method="post" name="booking-form" action="/form-submission">
                 <input type="hidden" name="booking-form" value="booking-form" />
                 <select placeholder="Booking Type">
                   <option value="" disabled selected hidden>
