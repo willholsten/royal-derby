@@ -48,7 +48,7 @@ export default class Functions extends React.Component {
                 label="Room Rates"
               />
               <PrimaryButton
-                link="/images/Will-Holsten-CV.pdf"
+                link="mailto:enquiries@royalderbyhotel.com.au"
                 iconRight={<i className="fas fa-arrow-right arrow" />}
                 label="Enquire Now"
               />

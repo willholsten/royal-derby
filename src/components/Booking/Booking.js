@@ -41,38 +41,38 @@ export default class Contact extends React.Component {
                 />
                 <input
                   type="email"
-                  name="email"
+                  name="Email"
                   placeholder="Email"
                   autocomplete="email"
                 />
                 <input
-                  type="email"
-                  name="email"
+                  type="tel"
+                  name="Contact Number"
                   placeholder="Contact Number"
-                  autocomplete="email"
+                  autocomplete="phone"
                 />
                 <input
-                  type="email"
-                  name="email"
+                  type="date"
+                  name="Date"
                   placeholder="Date"
-                  autocomplete="email"
+                  autocomplete="off"
                 />
                 <input
-                  type="email"
-                  name="email"
+                  type="text"
+                  name="Time"
                   placeholder="Time"
-                  autocomplete="email"
+                  autocomplete="off"
                 />
                 <input
-                  type="email"
-                  name="email"
+                  type="text"
+                  name="Number of Guests"
                   placeholder="Number of Guests"
-                  autocomplete="email"
+                  autocomplete="off"
                 />
 
                 <textarea
                   type="text"
-                  name="message"
+                  name="Special Requests"
                   placeholder="Special Requests"
                   autocomplete="off"
                 />

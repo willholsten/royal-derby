@@ -20,7 +20,7 @@ class BookingModal extends React.Component {
           </span>
           <h1>Booking Form</h1>
           <p>Our team will get back to you within 24hrs to confirm.</p>
-          <form method="post" action="/form-submission">
+          <form method="post">
             <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
@@ -35,28 +35,28 @@ class BookingModal extends React.Component {
               autocomplete="email"
             />
             <input
-              type="email"
-              name="email"
+              type="text"
+              name="Contact Number"
               placeholder="Contact Number"
-              autocomplete="email"
+              autocomplete="off"
             />
             <input
-              type="email"
-              name="email"
+              type="text"
+              name="date"
               placeholder="Date"
-              autocomplete="email"
+              autocomplete="off"
             />
             <input
-              type="email"
-              name="email"
+              type="text"
+              name="time"
               placeholder="Time"
-              autocomplete="email"
+              autocomplete="off"
             />
             <input
-              type="email"
-              name="email"
+              type="text"
+              name="guests"
               placeholder="Number of Guests"
-              autocomplete="email"
+              autocomplete="off"
             />
 
             <textarea
