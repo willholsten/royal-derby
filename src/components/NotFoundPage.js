@@ -1,22 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 import PrimaryButton from "./Buttons/PrimaryButton";
 
 const NotFoundPage = () => (
   <div>
-    <div className="landing-container">
-      <div className="landing-content">
-        <h1>404</h1>
-        <h4>Page Not Found</h4>
+    <section className="section error">
+      <Fade delay={500}>
+        <h2>404</h2>
+        <p>Sorry this page does not exist.</p>
         <Link to="/" activeClassName="is-active" exact={true}>
           <PrimaryButton
-            className="button-primary button-landing"
+            className="button-primary"
+            iconRight={<i className="fas fa-arrow-right arrow" />}
             link="/about"
             label="Return Home"
           />
         </Link>
-      </div>
-    </div>
+      </Fade>
+    </section>
   </div>
 );
 
