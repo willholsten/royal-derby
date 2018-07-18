@@ -17,6 +17,13 @@ form {
   max-width: 100%;
 }
 
+input[type=text] {
+  /* Remove First */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 input,
 textarea,
   {

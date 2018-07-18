@@ -24,6 +24,7 @@
   >div {
     background: $background-container;
     margin: $s-size 0;
+    max-width: 100%;
   }
   p {
     padding: $s-size $s-size $m-size;
