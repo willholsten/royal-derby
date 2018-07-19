@@ -115,6 +115,14 @@ class BurgerMenu extends React.Component {
           >
             Contact
           </NavLink>
+          <NavLink
+            to="/booking"
+            activeClassName="is-active"
+            exact={true}
+            onClick={() => this.closeMenu()}
+          >
+            Make a Booking
+          </NavLink>
         </Menu>
       </div>
     );
