@@ -37,21 +37,15 @@ export default class Functions extends React.Component {
           <Fade delay={500} up>
             <div className="container functions-content">
               <PrimaryButton
-                link="/booking"
-                iconRight={<i className="fas fa-arrow-right arrow" />}
-                label="Enquire Now"
-              />
-              <PrimaryButton
                 link="/images/RDH-Function-Pack.pdf"
                 target="_blank"
                 iconRight={<i className="fas fa-arrow-right arrow" />}
-                label="Rooms & Packages"
+                label="Function Pack"
               />
               <PrimaryButton
-                link="/images/RDH-Function-Terms.pdf"
-                target="_blank"
+                link="/booking"
                 iconRight={<i className="fas fa-arrow-right arrow" />}
-                label="Terms"
+                label="Enquire Now"
               />
               <h4>View our function listing on Partystar</h4>
               <a
