@@ -1,10 +1,7 @@
 import React from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { Route, Switch, withRouter } from "react-router-dom";
 import BurgerMenu from "../components/BurgerMenu/BurgerMenu";
 
-import styled from "styled-components";
-import BookingModal from "../components/BookingModal/BookingModal";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Home from "../components/Home/Home";
