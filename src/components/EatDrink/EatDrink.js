@@ -32,12 +32,12 @@ export default class About extends React.Component {
                 seasonal specials.
               </p>
               <PrimaryButton
-                link="/images/Will-Holsten-CV.pdf"
+                link="/images/RDH-Menu.pdf"
                 iconRight={<i className="fas fa-arrow-right arrow" />}
                 label="Food + Wine Menu"
               />
               <PrimaryButton
-                link="/images/Will-Holsten-CV.pdf"
+                link="/images/RDH-Workers-Lunch.pdf"
                 iconRight={<i className="fas fa-arrow-right arrow" />}
                 label="Friday Lunch Menu"
               />

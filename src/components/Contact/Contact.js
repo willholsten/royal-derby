@@ -54,7 +54,6 @@ export default class Contact extends React.Component {
                   placeholder="Email"
                   autocomplete="email"
                 />
-
                 <textarea
                   type="text"
                   name="message"
