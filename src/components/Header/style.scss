@@ -68,6 +68,22 @@
       }
     }
   }
+  .header-social {
+    text-align: center;
+    margin-top: $xl-size;
+    a {
+      font-size: 2rem;
+      margin: 0;
+      padding: $m-size;
+      border-top: none;
+    }
+    a:hover {
+      background: none;
+    }
+    .fa-facebook-f {
+      text-align: center;
+    }
+  }
   .sidebar-arrow {
     opacity: 0.6;
     margin-left: 10px;

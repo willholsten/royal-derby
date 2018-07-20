@@ -84,14 +84,6 @@ class BurgerMenu extends React.Component {
             What's On
           </NavLink>
           <NavLink
-            to="/social"
-            activeClassName="is-active"
-            exact={true}
-            onClick={() => this.closeMenu()}
-          >
-            Social
-          </NavLink>
-          <NavLink
             to="/functions"
             activeClassName="is-active"
             exact={true}

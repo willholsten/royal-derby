@@ -21,9 +21,6 @@ class Header extends React.Component {
             <NavLink to="/whats-on" activeClassName="is-active" exact={true}>
               What's On <i className="fas fa-angle-right sidebar-arrow" />
             </NavLink>
-            <NavLink to="/social" activeClassName="is-active" exact={true}>
-              Social <i className="fas fa-angle-right sidebar-arrow" />
-            </NavLink>
             <NavLink to="/functions" activeClassName="is-active" exact={true}>
               Functions <i className="fas fa-angle-right sidebar-arrow" />
             </NavLink>
@@ -40,6 +37,23 @@ class Header extends React.Component {
             <NavLink to="/booking" activeClassName="is-active" exact={true}>
               Make a Booking <i className="fas fa-angle-right sidebar-arrow" />
             </NavLink>
+            <div className="header-social">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/RoyalDerbyHotel"
+              >
+                <i className="fab fa-facebook-f" />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.instagram.com/royalderbyhotel/"
+              >
+                <i className="fab fa-instagram" />
+              </a>
+              <a target="_blank" href="https://twitter.com/RoyalDerbyHotel">
+                <i className="fab fa-twitter" />
+              </a>
+            </div>
           </div>
         </div>
       </header>
