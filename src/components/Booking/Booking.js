@@ -26,7 +26,7 @@ export default class Contact extends React.Component {
 
               <form method="post" action="/form-submission">
                 <input type="hidden" name="form-name" value="booking" />
-                <select placeholder="Booking Type">
+                <select placeholder="Booking Type" name="Booking Type">
                   <option value="" disabled selected hidden>
                     Booking Type
                   </option>
@@ -35,7 +35,7 @@ export default class Contact extends React.Component {
                 </select>
                 <input
                   type="text"
-                  name="name"
+                  name="Name"
                   placeholder="Name"
                   autocomplete="name"
                 />
