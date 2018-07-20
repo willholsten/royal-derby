@@ -4,7 +4,6 @@ import Maps from "../Maps/Maps";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Fade from "react-reveal/Fade";
 import "./style.scss";
-import "./animation.scss";
 
 export default class Home extends React.Component {
   componentDidMount() {
