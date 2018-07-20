@@ -2,6 +2,9 @@ import React from "react";
 import PageHeader from "../PageHeader/PageHeader";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Fade from "react-reveal/Fade";
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-121952622-4");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 import "./style.scss";
 
