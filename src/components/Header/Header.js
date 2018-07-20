@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { NavLink } from "react-router-dom";
 import LogoMobile from "./images/logo-mobile.svg";
 import LogoDesktop from "./images/logo-desktop.svg";
