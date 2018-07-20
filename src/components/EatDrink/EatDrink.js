@@ -33,11 +33,13 @@ export default class About extends React.Component {
               </p>
               <PrimaryButton
                 link="/images/RDH-Menu.pdf"
+                target="_blank"
                 iconRight={<i className="fas fa-arrow-right arrow" />}
                 label="Food + Wine Menu"
               />
               <PrimaryButton
                 link="/images/RDH-Workers-Lunch.pdf"
+                target="_blank"
                 iconRight={<i className="fas fa-arrow-right arrow" />}
                 label="Friday Lunch Menu"
               />

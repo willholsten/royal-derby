@@ -24,7 +24,7 @@ export default class Contact extends React.Component {
               </p>
               <PrimaryButton
                 className="button-primary button-contact"
-                link=""
+                link="tel:+61394172321"
                 iconLeft={<i className="fas fa-phone left-icon" />}
                 type="submit"
                 label="Phone"
@@ -32,7 +32,7 @@ export default class Contact extends React.Component {
               <PrimaryButton
                 className="button-primary button-contact"
                 iconLeft={<i className="fas fa-envelope left-icon" />}
-                link=""
+                link="mailto:enquiries@royalderbyhotel.com.au"
                 type="submit"
                 label="Email"
               />
