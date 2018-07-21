@@ -3,8 +3,6 @@ import PageHeader from "../PageHeader/PageHeader";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Fade from "react-reveal/Fade";
 import Maps from "../Maps/Maps";
-import ReactGA from "react-ga";
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 import "./style.scss";
 

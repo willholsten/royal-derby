@@ -2,8 +2,6 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import PageHeader from "../PageHeader/PageHeader";
 import WhatsOnElement from "./WhatsOnElement";
-import ReactGA from "react-ga";
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 import "./style.scss";
 

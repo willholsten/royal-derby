@@ -16,14 +16,6 @@ WebFont.load({
   }
 });
 
-const DEFAULT_CONFIG = {
-  trackingId: "UA-29548332-1",
-  debug: true,
-  gaOptions: {
-    cookieDomain: "none"
-  }
-};
-
 const App = () => (
   <Router>
     <AppRouter />

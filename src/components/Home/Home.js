@@ -14,10 +14,8 @@ export default class Home extends React.Component {
       <div>
         <div className="hero-container">
           <div className="hero-content">
-            <Fade delay={500} down>
+            <Fade delay={500}>
               <h1>Welcome to the Derby</h1>
-            </Fade>
-            <Fade delay={1000}>
               <PrimaryButton
                 className="button-primary button-landing"
                 iconRight={<i className="fas fa-arrow-right arrow" />}
@@ -29,10 +27,14 @@ export default class Home extends React.Component {
         </div>
         <div className="secondary-hero-container">
           <Link to="/whats-on" className="whats-on">
-            <h1>What's On</h1>
+            <Fade delay={500}>
+              <h1>What's On</h1>
+            </Fade>
           </Link>
           <Link to="/functions" className="functions">
-            <h1>Functions</h1>
+            <Fade delay={500}>
+              <h1>Functions</h1>
+            </Fade>
           </Link>
         </div>
         <Maps />

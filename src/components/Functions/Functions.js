@@ -2,8 +2,6 @@ import React from "react";
 import PageHeader from "../PageHeader/PageHeader";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Fade from "react-reveal/Fade";
-import ReactGA from "react-ga";
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 import "./style.scss";
 
