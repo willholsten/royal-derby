@@ -1,7 +1,10 @@
+//React
 import React from "react";
-import { Router, Route, Switch, Link, NavLink } from "react-router-dom";
-import BurgerMenu from "../components/BurgerMenu/BurgerMenu";
+import { Router, Route, Switch } from "react-router-dom";
+import createHistory from "history/createBrowserHistory";
 
+// Components
+import BurgerMenu from "../components/BurgerMenu/BurgerMenu";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Home from "../components/Home/Home";
@@ -15,7 +18,7 @@ import Booking from "../components/Booking/Booking";
 import Success from "../components/Contact/Success";
 import NotFoundPage from "../components/NotFoundPage";
 
-import createHistory from "history/createBrowserHistory";
+// Google Analytics
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-121952622-4");
 ReactGA.pageview(window.location.pathname + window.location.search);
