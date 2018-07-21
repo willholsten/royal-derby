@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom";
+import { Router, Route, Switch, Link, NavLink } from "react-router-dom";
 import BurgerMenu from "../components/BurgerMenu/BurgerMenu";
 
 import Header from "../components/Header/Header";
@@ -29,7 +29,7 @@ history.listen((location, action) => {
 class AppRouter extends React.Component {
   render() {
     return (
-      <BrowserRouter history={this.props.history}>
+      <Router history={history}>
         <div>
           <Header />
           <BurgerMenu />
@@ -51,7 +51,7 @@ class AppRouter extends React.Component {
           </div>
           <Footer />
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
