@@ -15,69 +15,37 @@ import Booking from "../components/Booking/Booking";
 import Success from "../components/Contact/Success";
 import NotFoundPage from "../components/NotFoundPage";
 
-export function fireTracking(nextState) {
-  const { pathname } = nextState.location; // this gives you the next URL
+import createHistory from "history/createBrowserHistory";
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-121952622-4");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
-  ReactGA.pageview(pathname);
-}
+const history = createHistory();
+history.listen((location, action) => {
+  ReactGA.set({ page: location.pathname });
+  ReactGA.pageview(location.pathname);
+});
 
 class AppRouter extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter history={this.props.history}>
         <div>
           <Header />
           <BurgerMenu />
           <div className="page-container" id="outer-container">
             <main id="page-wrap">
               <Switch>
-                <Route
-                  path="/"
-                  component={Home}
-                  exact={true}
-                  onEnter={fireTracking}
-                />
-                <Route
-                  path="/eat-drink"
-                  component={EatDrink}
-                  onEnter={fireTracking}
-                />
-                <Route
-                  path="/whats-on"
-                  component={WhatsOn}
-                  onEnter={fireTracking}
-                />
-                <Route
-                  path="/social"
-                  component={Social}
-                  onEnter={fireTracking}
-                />
-                <Route
-                  path="/functions"
-                  component={Functions}
-                  onEnter={fireTracking}
-                />
-                <Route
-                  path="/accommodation"
-                  component={Accommodation}
-                  onEnter={fireTracking}
-                />
-                <Route
-                  path="/contact"
-                  component={Contact}
-                  onEnter={fireTracking}
-                />
-                <Route
-                  path="/booking"
-                  component={Booking}
-                  onEnter={fireTracking}
-                />
-                <Route
-                  path="/form-submission"
-                  component={Success}
-                  onEnter={fireTracking}
-                />
-                <Route component={NotFoundPage} onEnter={fireTracking} />
+                <Route path="/" component={Home} exact={true} />
+                <Route path="/eat-drink" component={EatDrink} />
+                <Route path="/whats-on" component={WhatsOn} />
+                <Route path="/social" component={Social} />
+                <Route path="/functions" component={Functions} />
+                <Route path="/accommodation" component={Accommodation} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/booking" component={Booking} />
+                <Route path="/form-submission" component={Success} />
+                <Route component={NotFoundPage} />
               </Switch>
             </main>
           </div>

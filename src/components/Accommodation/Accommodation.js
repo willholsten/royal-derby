@@ -2,10 +2,7 @@ import React from "react";
 import PageHeader from "../PageHeader/PageHeader";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Fade from "react-reveal/Fade";
-
 import "./style.scss";
-
-const profile = "./images/profile.png";
 
 export default class Functions extends React.Component {
   componentDidMount() {

@@ -27,6 +27,7 @@
     "extract-text-webpack-plugin": "^4.0.0-alpha.0",
     "google-map-react": "^1.0.5",
     "hamburgers": "^0.9.3",
+    "history": "^4.7.2",
     "live-server": "^1.2.0",
     "node-sass": "^4.9.0",
     "nopm": "0.0.0",
