@@ -23,6 +23,7 @@ export default class WhatsOn extends React.Component {
       <div>
         <PageHeader className="whats-on-header" header="What's On" />
         <section className="section">
+          <h2>Daily Specials</h2>
           <Fade delay={500} up>
             <div className="container whats-on-content">
               <WhatsOnElement
@@ -55,20 +56,33 @@ export default class WhatsOn extends React.Component {
               />
               <WhatsOnElement
                 image={friday}
-                alt="Friday - Pick the Margin"
+                alt="Friday - Happy Hour"
                 header="Friday"
-                subheader="Pick The Margin"
-                description="$200 voucher up for grabs during Friday night Footy, Workers Lunch from 12 – 5pm, $7 pints of beer, $6 basic spirits, $12 esp martinis and $5 house wines from 4-7pm."
+                subheader="Happy Hour"
+                description="Workers Lunch from 12 – 5pm, $7 pints of beer, $6 basic spirits, $12 esp martinis and $5 house wines from 4-7pm."
               />
               <WhatsOnElement
                 image={sunday}
-                alt="Sunday - Spit Roast"
-                header="Sunday"
-                subheader="Spit Roast"
-                description="Spit roast in the beer garden, $15 Rolls & $20 Plates – roast meat, roast veggies and gravy."
+                alt="Weekend - Live Sport"
+                header="Weekend"
+                subheader="Live Sport"
+                description="All AFL and NRL Live & Loud every weekend at Fitzroy’s home of sport."
               />
             </div>
           </Fade>
+        </section>
+
+        <section className="live-sports-section">
+          <h2>Live Sports</h2>
+          <div className="live-sport-container">
+            <Iframe
+              className="live-sport"
+              allowtransparency="true"
+              frameborder="0"
+              scrolling="no"
+              url="https://secure.gameonlivesports.com.au/live/auto/4458/4458.html"
+            />
+          </div>
         </section>
       </div>
     );
