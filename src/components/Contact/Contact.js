@@ -60,6 +60,7 @@ export default class Contact extends React.Component {
                   placeholder="Message"
                   autocomplete="off"
                 />
+                <div data-netlify-recaptcha />
                 <PrimaryButton
                   className="button-primary button-contact"
                   iconRight={<i className="fas fa-arrow-right arrow" />}

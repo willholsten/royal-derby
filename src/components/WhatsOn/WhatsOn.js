@@ -2,6 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import PageHeader from "../PageHeader/PageHeader";
 import WhatsOnElement from "./WhatsOnElement";
+import Iframe from "react-iframe";
 
 import "./style.scss";
 
