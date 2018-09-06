@@ -76,6 +76,10 @@ export default class Contact extends React.Component {
                   autocomplete="off"
                 />
                 <div data-netlify-recaptcha />
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6Ldvum4UAAAAAM5xreTG-0JvdZPzr27_Skc7SdJP"
+                />
                 <PrimaryButton
                   className="button-primary button-contact"
                   iconRight={<i className="fas fa-arrow-right arrow" />}

@@ -1,5 +1,6 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
+
 .contact-header {
   background: url('./images/booking.jpg');
   background-position: center;
@@ -16,7 +17,7 @@ select {
   display: block;
   width: 600px;
   max-width: 100%;
-  background: rgba(0, 0, 0, .05);
+  background: lighten($secondary, 20%);
   border-radius: 3px;
   color: lighten($primary, 40%);
   letter-spacing: 0.5px;
