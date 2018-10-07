@@ -78,7 +78,7 @@ export default class Contact extends React.Component {
                 <div data-netlify-recaptcha />
                 <div
                   class="g-recaptcha"
-                  data-sitekey="6Ldvum4UAAAAAM5xreTG-0JvdZPzr27_Skc7SdJP"
+                  data-sitekey="6LfF2XMUAAAAAIYDmUE_zmfZ7Ui1i0OnMY98i0MC"
                 />
                 <PrimaryButton
                   className="button-primary button-contact"
