@@ -1,5 +1,6 @@
 @import '../../styles/base/settings';
 @import '../../styles/base/base';
+
 .button-primary {
   background: white;
   width: 100%;
@@ -29,12 +30,20 @@
 .button-primary:hover {
   background: white;
   color: $primary;
+
   .arrow {
     transform: translate(0.5em, 0);
   }
 }
 
 @media (min-width: 720px) {
+  .button-primary {
+    width: unset;
+    margin: $m-size;
+  }
+}
+
+@media (min-width: 999px) {
   .button-primary {
     width: unset;
     margin: $xl-size $m-size;

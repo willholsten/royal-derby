@@ -19,26 +19,25 @@ export default class Contact extends React.Component {
           <Fade delay={500} up>
             <div className="container">
               <p>
-                We would love to hear from you, please get in touch by calling
-                or completing the enquiry form below.{" "}
+                If you have any enquiries or suggestions, we would love to hear
+                from you! Please get in touch via the methods below and we will
+                get back to you as soon as posisble.
               </p>
               <PrimaryButton
                 className="button-primary button-contact"
                 link="tel:+61394172321"
                 iconLeft={<i className="fas fa-phone left-icon" />}
-                type="submit"
                 label="Phone"
               />
               <PrimaryButton
                 className="button-primary button-contact"
                 iconLeft={<i className="fas fa-envelope left-icon" />}
                 link="mailto:enquiries@royalderbyhotel.com.au"
-                type="submit"
                 label="Email"
               />
             </div>
           </Fade>
-          <Fade delay={500} up>
+          {/* <Fade delay={500} up>
             <div className="container">
               <form method="post" action="/form-submission">
                 <input type="hidden" name="form-name" value="contact" />
@@ -72,9 +71,9 @@ export default class Contact extends React.Component {
                   type="submit"
                   label="Submit"
                 />
-              </form>
+    </form> 
             </div>
-          </Fade>
+          </Fade> */}
         </section>
         <Maps />
       </div>

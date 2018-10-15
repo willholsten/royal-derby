@@ -3,6 +3,7 @@ import PageHeader from "../PageHeader/PageHeader";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import Fade from "react-reveal/Fade";
 import "./style.scss";
+import Maps from "../Maps/Maps";
 
 export default class Functions extends React.Component {
   componentDidMount() {
@@ -29,8 +30,8 @@ export default class Functions extends React.Component {
                   Please Note: Check in and check out are completed at the main
                   bar down stairs between the hours of 2pm till 10 pm 7 days a
                   week, outside these hours are available if pre-arranged. We
-                  don’t cater for guests under the age of 18. Please call 0499
-                  979 620 to book accommodation.
+                  don’t cater for guests under the age of 18. Please call 03
+                  9417 2321 to book accommodation.
                 </b>
               </p>
             </div>
@@ -45,16 +46,22 @@ export default class Functions extends React.Component {
                 label="Room Rates"
               />
               <PrimaryButton
+                link="tel:+61394172321
+                "
+                iconLeft={<i className="fas fa-phone left-icon" />}
+                label="Phone"
+              />
+              <PrimaryButton
                 link="mailto:enquiries@royalderbyhotel.com.au"
                 iconRight={<i className="fas fa-arrow-right arrow" />}
-                label="Enquire Now"
+                label="Email"
               />
 
               <h4>Amenities</h4>
               <p>All rooms feature the following shared facilities.</p>
               <ul>
                 <li>Kitchenette</li>
-                <li>Fride</li>
+                <li>Fridge</li>
                 <li>Microwave</li>
                 <li>Kettle</li>
                 <li>Toaster</li>
@@ -77,6 +84,7 @@ export default class Functions extends React.Component {
             </div>
           </Fade>
         </section>
+        <Maps />
       </div>
     );
   }
