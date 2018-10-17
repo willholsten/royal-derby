@@ -37,43 +37,6 @@ export default class Contact extends React.Component {
               />
             </div>
           </Fade>
-          {/* <Fade delay={500} up>
-            <div className="container">
-              <form method="post" action="/form-submission">
-                <input type="hidden" name="form-name" value="contact" />
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  autocomplete="name"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  autocomplete="email"
-                />
-                <textarea
-                  type="text"
-                  name="message"
-                  placeholder="Message"
-                  autocomplete="off"
-                />
-                <div data-netlify-recaptcha />
-                <div
-                  class="g-recaptcha"
-                  data-sitekey="6LfF2XMUAAAAAIYDmUE_zmfZ7Ui1i0OnMY98i0MC"
-                />
-                <PrimaryButton
-                  className="button-primary button-contact"
-                  iconRight={<i className="fas fa-arrow-right arrow" />}
-                  link=""
-                  type="submit"
-                  label="Submit"
-                />
-    </form> 
-            </div>
-          </Fade> */}
         </section>
         <Maps />
       </div>
