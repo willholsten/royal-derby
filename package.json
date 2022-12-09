@@ -23,7 +23,7 @@
     "depcheck": "^0.6.9",
     "eslint": "^5.0.1",
     "eve": "^0.5.4",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "extract-text-webpack-plugin": "^4.0.0-alpha.0",
     "google-map-react": "^1.0.5",
     "hamburgers": "^0.9.3",
