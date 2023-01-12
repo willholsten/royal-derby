@@ -28,7 +28,7 @@
     "google-map-react": "^1.0.5",
     "hamburgers": "^0.9.3",
     "history": "^4.7.2",
-    "live-server": "^1.2.0",
+    "live-server": "^1.2.2",
     "node-sass": "^4.9.0",
     "nopm": "0.0.0",
     "normalize.css": "^8.0.0",
